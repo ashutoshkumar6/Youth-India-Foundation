@@ -1,0 +1,237 @@
+.mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:10000;
+  background-color:black;
+  display:none;
+width: 5478px; 
+font-size: 32pt;  
+height: 1000px; 
+display: none; 
+opacity: 0.5;
+}  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:440px;
+  height:850px;
+  display:none;
+  z-index:10000;
+  padding:20px;
+  border-radius: 5px white;
+  text-align: center;
+}
+#boxes #dialog {
+  width:1200px; 
+  height:600px;
+  border-radius:5px white;
+  padding: 10px 10px 10px 10px;
+  background-color:black;
+  font-size: 15pt;
+  opacity: 0.8;
+  z-index:10000;
+}
+
+.agree:hover{
+  background-color: #D1D1D1;
+}
+.popupoption:hover{
+	background-color:#D1D1D1;
+	color: green;
+}
+.popupoption2:hover{
+	color: red;
+}
+
+.search-box4 {
+		
+		position: relative;
+		float: left;
+			
+		color:white;
+		
+		height:500px;	
+	}
+.search-box5 {
+		
+		position: relative;
+		float: center;
+		margin-top: -30px;	
+		color:white;
+			
+		height:500px;	
+	}
+.search-box6 {
+		
+		position: relative;
+		float: right;
+		margin-top: -30px;	
+		color:white;
+			
+		height:500px;	
+	}
+
+
+
+.image {
+
+			width: 200px;
+			height: 130px;
+			margin-top: -30px;
+			border: 3px ;
+			border-radius: 10%;
+	
+}
+
+	.input11 {
+			color:white;
+			
+			display: block;
+			height: 450px;	
+			width: 360px;
+			top: 10px;
+			left: 470px;
+			font-family: Libre Baskerville;
+			font-size: 20px;
+			border-radius: 20px;
+			padding: 0px 12px;
+			position: absolute;
+			z-index: -100;
+	}
+	
+	.input4 {
+			color:white;
+			
+			display: block;
+			height: 450px;	
+			width: 360px;
+			top: 10px;
+			left: 50px;
+			font-family: Libre Baskerville;
+			font-size: 20px;
+			border-radius: 20px;
+			padding: 0px 12px;
+			position: absolute;
+			z-index: -100;
+	}
+	
+	.input12 {
+			color:white;
+			display: block;
+			height: 450px;	
+			width: 360px;
+			top: 10px;
+			left: 870px;
+			font-family: Libre Baskerville;
+			font-size: 20px;
+			border-radius: 20px;
+			padding: 0px 12px;
+			position: absolute;
+			z-index: -100;
+	}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  border: 2px black;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #ec4e20;
+}
+
+.button1 {
+  font-size: 1em;
+border-color:blue;
+background-color:blue;
+  padding: 10px;
+  color: white;
+  border: 2px black;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button1:hover {
+  background: #ec4e20;
+}
+
+.b1 {
+  font-size: 1em;
+
+  padding: 10px;
+  color: orange;
+  border: 2px black;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  z-index:10000;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0.8;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+.popup {
+  margin: 65px auto;
+  padding: 20px;
+  background: black;
+  border-radius: 5px ;
+border: 5px solid white;
+  width: 90%;
+  height:80%;
+opacity:0.8;
+  position: relative;
+ 
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: black;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
