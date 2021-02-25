@@ -7,56 +7,52 @@
 	<title>Form</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body>  
 <div class="container">
 	<div class="form-contaier">
 		<div class="signin-signup">
 		 <div class="form-contaier">
 
-        <form action="https://paytm.me/a1-ubEm" class="form-group" >
+      <form action="https://paytm.me/a1-ubEm" class="form-group" id="RegForm">
 
           
          
-           <div class="input-field">
- 
-               <i class="fas fa-user"></i>
+        <div class="input-field">
 
-                <input type="password" placeholder="Name">
+            <i class="fas fa-user"></i>
 
-            </div>
+             <input  name="Name" type="text" placeholder="Name" required>
 
-            
-           <div class="input-field">
-  
-              <i class="fas fa-envelope"></i>
-	      <input type="text" placeholder="Email">
-           </div>
+         </div>
 
-           
-           <div class="input-field">
+         
+        <div class="input-field">
+
+           <i class="fas fa-envelope"></i>
+     <input name="EMail" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required>
+        </div>
+
+        
+        <div class="input-field">
+
+            <i class="fas fa-user"></i>
+
+          <input  name="tel" type="" placeholder="Phone" pattern="^[0-9]{10}$" title="Please enter only digits" required>
+
+       </div>
  
-               <i class="fas fa-user"></i>
-   
-             <input type="password" placeholder="Phone">
-  
-          </div>
-   
-          
-          <div class="input-field">
-  
-              <i class="fas fa-user"></i>
-    
-            <input type="text" placeholder="Addrress">
-  
-          </div>
-    
-        <input onclick="window.location.href = 'https://paytm.me/a1-ubEm';" type="submit" value="Pay" class="btn-solid"/>
+       
+       <div class="input-field">
+
+           <i class="fas fa-user"></i>
  
-       </form>
+         <input  name="Address" type="text" placeholder="Address" required>
+
+       </div>
  
-   </div> 
-			</div>
-		</form>
+    <input   type="submit" value="Pay" id="button" class="btn-solid" />
+
+    </form>
 
 		
 	</div>
@@ -72,6 +68,7 @@
 
 
 
-<script src="app.js" ></script>
+<!-- <script src="app.js" ></script> -->
+<script src="add.js" ></script>
 </body>
 </html>
