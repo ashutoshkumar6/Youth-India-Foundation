@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+    <h1><%= user.firstName %><%= user.lastName %></h1>  
+    <ul>
+        <li>Phone: <%= user.mobileNo %></li>
+        <li>Email: <%= user.email %></li>
+    </ul>
+    <% if (session_id == user._id) { %> 
+        <a href="/users/<%= session_id %>/edit">Edit Profile</a>
+    <% } %> 
+    <a href="/">Back to Home</a>
+    <a href="/users">Back to All Users</a>
+</body>
+</html>

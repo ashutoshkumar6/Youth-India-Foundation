@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+</head>
+<body>
+    <h1>Edit Profile:</h1> 
+    <form action="/users/<%= user._id %>?_method=PATCH" method="post">
+        <h3><%= user.firstName %><%= user.lastName %></h3>  
+        <div>
+            <label for="mobileNo">MobileNo:</label>
+            <input type="text" id="mobileNo" name="mobileNo" placeholder="mobileNo" value="<%= user.mobileNo %>">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" value="<%= user.email %>">
+        </div>
+        <div>
+            <label for="password1">New Password:</label>
+            <input type="password" id="password1" name="password1" placeholder="password">
+        </div>
+        <div>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" id="password2" name="password2" placeholder="confirm password">
+        </div>
+        <button type="submit">Save</button>
+    </form>
+    <a href="/">Back to Home</a>
+    <script>
+        function validateForm() {
+            const password1 = document.forms["signupForm"]["password1"].value;
+            const password2 = document.forms["signupForm"]["password2"].value;
+            if (password1 !== password2) {
+            alert("Passwords dont match");
+            return false;
+            }
+        }
+    </script>
+</body>
+</html>
